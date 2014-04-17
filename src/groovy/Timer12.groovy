@@ -24,10 +24,10 @@ def stimer(){
 }
 
 def timer = stimer()
-sleep(3000)
+sleep(300)
 
 timer()
-sleep 3000
+sleep 300
 timer()
 
 println()
@@ -35,9 +35,31 @@ println()
 
 timer = stimer()
 timer()
-sleep 3000
+sleep 300
 timer()
 
 //example3
 
+
 def list = []
+def printList = { list.each { println it} println()}
+
+
+list.add "One"
+list << "Two"
+printList()
+
+
+list[0] = "Uno"
+printList()
+
+list.add(2, "Three")
+printList()
+
+list -= "Two"
+printList()
+
+list.add(1, "Two")
+printList()
+
+println(list[-3])
