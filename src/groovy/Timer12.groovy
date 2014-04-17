@@ -37,3 +37,7 @@ timer = stimer()
 timer()
 sleep 3000
 timer()
+
+//example3
+
+def list = []
